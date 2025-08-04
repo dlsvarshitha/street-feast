@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Feast - Order Local Street Food</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Street Feast</h1>
+            <p>Discover and order the best street food in your area</p>
+            <button onclick="scrollToMenu()">Explore Menu</button>
+        </div>
+    </header>
+    <section id="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <img src="images/download.jpg" alt="Street food vendor">
+        <div class="about-text">
+            <p>
+                At <strong>Street Feast</strong>, we celebrate the joy of street food by bringing local flavors directly to you.
+                Our platform connects you with authentic street food vendors offering fresh, delicious meals — anytime, anywhere.
+            </p>
+            <p>
+                We’re passionate about supporting small businesses and delivering unforgettable food experiences. Taste the tradition, spice, and creativity of local chefs with Street Feast!
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <main>
+        <section id="menu">
+            <h2>Popular Dishes</h2>
+            <div class="menu-grid">
+                <div class="food-card">
+                    <img src="C:\516\street-feast\pani puri.jpg" alt="Pani Puri">
+                    <h3>Pani Puri</h3>
+                    <p>20.00</p>
+                    <button onclick="addToCart('Pani Puri', 20.00)">Add to Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="C:\516\street-feast\bajji.jpg" alt="Bajji">
+                    <h3>Chole-bature</h3>
+                    <p>30.00</p>
+                    <button onclick="addToCart('Chole-bature', 30.00)">Add to Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="C:\516\street-feast\burger.jpg" alt="Tacos">
+                    <h3>Pav-bajji</h3>
+                    <p>40.00</p>
+                    <button onclick="addToCart('Tacos', 40.00)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: <span id="total">0.00</span></p>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Street Feast. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
